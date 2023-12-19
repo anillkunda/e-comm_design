@@ -1,0 +1,152 @@
+/* --Below 1344px (Smaller Desktops)-- */
+@media (max-width: 84em) {
+  .heading-container,
+  .product-container,
+  .footer-container {
+    max-width: 130rem;
+  }
+}
+
+@media (max-width: 75em) {
+  .grid {
+    column-gap: 4.5rem;
+    row-gap: 6rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .main-nav-list {
+    gap: 4.8rem;
+  }
+}
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .main-nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile[name="close"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile[name="menu"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .header {
+    height: 8rem;
+  }
+
+  .logo {
+    height: 6rem;
+  }
+
+  .brand-name {
+    font-size: 3.2rem;
+  }
+
+  .icon,
+  .icon-mobile {
+    font-size: 3.5rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-heading {
+    font-size: 2.2rem;
+  }
+
+  .contacts,
+  .footer-link:link,
+  .footer-link:visited {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--fotter {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .address-col,
+  .policies-col {
+    grid-column: span 3;
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 35em) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer {
+    padding: 9rem 2rem;
+  }
+
+  .footer-container {
+    padding: 0 3rem;
+  }
+}

@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+/* ----- Header ------ */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 100%;
+  height: 7rem;
+  padding: 0 4.8rem;
+  color: #212529;
+  background-color: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 5.5rem;
+}
+
+.brand-name {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: #212529;
+  cursor: pointer;
+}
+
+.main-nav-list,
+.nav-icon-list {
+  list-style: none;
+  display: flex;
+  align-content: center;
+}
+
+.main-nav-list {
+  gap: 3.2rem;
+}
+
+.nav-icon-list {
+  gap: 1.5rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 2rem;
+  padding: 1rem 1.5rem;
+  transition: all 0.45s ease;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  background-color: #212529;
+  color: #fbfbfb;
+}
+
+.icon {
+  display: inline-block;
+  text-decoration: none;
+  color: #212529;
+  font-size: 2.8rem;
+  cursor: pointer;
+}
+
+.icon:hover {
+  opacity: 0.7;
+}
+
+/* --Mobile Nav-- */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile {
+  font-size: 2.7rem;
+  color: #212529;
+}
+
+.icon-mobile[name="close"] {
+  display: none;
+}
+
+/* ----- Products Section ------ */
+.section-products {
+  padding: 5rem 0 5rem 0;
+  margin-top: 7.5rem;
+}
+
+.heading-container {
+  max-width: 130rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.product-heading {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 6.5rem;
+}
+
+.product-container {
+  max-width: 130rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 4.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.product-item-card {
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.4s;
+  overflow: hidden;
+}
+
+.item-img-box {
+  background-color: #ced4da;
+}
+
+.item-img {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.product-content {
+  padding: 1.5rem 0 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-name {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 400;
+}
+
+.item-price {
+  padding: 0.4rem 0.8rem;
+  font-size: 2rem;
+  color: #333;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.item-size-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.size-box {
+  cursor: pointer;
+  padding: 1rem 1.4rem;
+  border: 1px solid #333;
+  font-size: 1.5rem;
+  color: #212529;
+  font-weight: 400;
+}
+
+.size-box:hover {
+  background-color: #ced4da;
+}
+
+.more-collection {
+  max-width: 130rem;
+  padding: 3.2rem;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.more-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #212529;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.3rem;
+  transition: all 0.3s;
+}
+
+.more-link:hover {
+  color: #adb5bd;
+  border-bottom: 1px solid transparent;
+}
+
+/* ----- Footer ------ */
+
+.footer {
+  padding: 9rem 4rem;
+  border-top: 1px solid #eee;
+}
+
+.footer-container {
+  max-width: 130rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}

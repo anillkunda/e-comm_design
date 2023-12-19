@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.png" />
+
+    <!-- Google-Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ionicons Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <!-- CSS-Link -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <title>E-Commerce &mdash; Design...</title>
+  </head>
+  <body>
+    <!-- ** Header-Nav -->
+    <header class="header">
+      <div class="logo-box">
+        <a href="#">
+          <img class="logo" src="images/logo.png" alt="Brand logo" />
+        </a>
+        <h2 class="brand-name">Men's</h2>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#" class="main-nav-link">Home</a></li>
+          <li><a href="#" class="main-nav-link">Shop</a></li>
+          <li><a href="#" class="main-nav-link">Men</a></li>
+          <li><a href="#" class="main-nav-link">Get in Touch!</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-icon">
+        <ul class="nav-icon-list">
+          <li><ion-icon class="icon" name="search"></ion-icon></li>
+          <li><ion-icon class="icon" name="cart"></ion-icon></li>
+          <li><ion-icon class="icon" name="person-circle"></ion-icon></li>
+
+          <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile" name="menu"></ion-icon>
+            <ion-icon class="icon-mobile" name="close"></ion-icon>
+          </button>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- ** Products Section -->
+      <section class="section-products">
+        <div class="heading-container center-text">
+          <h1 class="product-heading">Men's New Collection</h1>
+        </div>
+
+        <div class="product-container grid">
+          <!-- Product 1 -->
+          <div class="product-item-card">
+            <div class="item-img-box">
+              <img class="item-img" src="images/img-1.png" alt="Product Img" />
+            </div>
+
+            <div class="product-content">
+              <h3 class="item-name">Dark Red Tshirt</h3>
+              <p class="item-price">₹ 799.00</p>
+              <div class="item-size-box">
+                <span class="size-box">S</span>
+                <span class="size-box">M</span>
+                <span class="size-box">L</span>
+                <span class="size-box">XL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-item-card">
+            <div class="item-img-box">
+              <img class="item-img" src="images/img-2.png" alt="Product Img" />
+            </div>
+
+            <div class="product-content">
+              <h3 class="item-name">Flower Print Shirt</h3>
+              <p class="item-price">₹ 999.00</p>
+              <div class="item-size-box">
+                <span class="size-box">S</span>
+                <span class="size-box">M</span>
+                <span class="size-box">L</span>
+                <span class="size-box">XL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-item-card">
+            <div class="item-img-box">
+              <img class="item-img" src="images/img-3.png" alt="Product Img" />
+            </div>
+
+            <div class="product-content">
+              <h3 class="item-name">Flower Print Shirt</h3>
+              <p class="item-price">₹ 600.00</p>
+              <div class="item-size-box">
+                <span class="size-box">S</span>
+                <span class="size-box">M</span>
+                <span class="size-box">L</span>
+                <span class="size-box">XL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-item-card">
+            <div class="item-img-box">
+              <img class="item-img" src="images/img-4.png" alt="Product Img" />
+            </div>
+
+            <div class="product-content">
+              <h3 class="item-name">Multicolor Shirt</h3>
+              <p class="item-price">₹ 999.00</p>
+              <div class="item-size-box">
+                <span class="size-box">S</span>
+                <span class="size-box">M</span>
+                <span class="size-box">L</span>
+                <span class="size-box">XL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="product-item-card">
+            <div class="item-img-box">
+              <img class="item-img" src="images/img-5.png" alt="Product Img" />
+            </div>
+
+            <div class="product-content">
+              <h3 class="item-name">Dark Green Tshirt</h3>
+              <p class="item-price">₹ 750.00</p>
+              <div class="item-size-box">
+                <span class="size-box">S</span>
+                <span class="size-box">M</span>
+                <span class="size-box">L</span>
+                <span class="size-box">XL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="product-item-card">
+            <div class="item-img-box">
+              <img class="item-img" src="images/img-6.png" alt="Product Img" />
+            </div>
+
+            <div class="product-content">
+              <h3 class="item-name">Casual Shirt</h3>
+              <p class="item-price">₹ 1,200.00</p>
+              <div class="item-size-box">
+                <span class="size-box">S</span>
+                <span class="size-box">M</span>
+                <span class="size-box">L</span>
+                <span class="size-box">XL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 7 -->
+          <div class="product-item-card">
+            <div class="item-img-box">
+              <img class="item-img" src="images/img-7.png" alt="Product Img" />
+            </div>
+
+            <div class="product-content">
+              <h3 class="item-name">Flower Print Shirt</h3>
+              <p class="item-price">₹ 800.00</p>
+              <div class="item-size-box">
+                <span class="size-box">S</span>
+                <span class="size-box">M</span>
+                <span class="size-box">L</span>
+                <span class="size-box">XL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 8 -->
+          <div class="product-item-card">
+            <div class="item-img-box">
+              <img class="item-img" src="images/img-8.png" alt="Product Img" />
+            </div>
+
+            <div class="product-content">
+              <h3 class="item-name">Flower Print Shirt</h3>
+              <p class="item-price">₹ 700.00</p>
+              <div class="item-size-box">
+                <span class="size-box">S</span>
+                <span class="size-box">M</span>
+                <span class="size-box">L</span>
+                <span class="size-box">XL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 9 -->
+          <div class="product-item-card">
+            <div class="item-img-box">
+              <img class="item-img" src="images/img-9.png" alt="Product Img" />
+            </div>
+
+            <div class="product-content">
+              <h3 class="item-name">White, Black Shirt</h3>
+              <p class="item-price">₹ 1,100.00</p>
+              <div class="item-size-box">
+                <span class="size-box">S</span>
+                <span class="size-box">M</span>
+                <span class="size-box">L</span>
+                <span class="size-box">XL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 10 -->
+          <div class="product-item-card">
+            <div class="item-img-box">
+              <img class="item-img" src="images/img-10.png" alt="Product Img" />
+            </div>
+
+            <div class="product-content">
+              <h3 class="item-name">Casual Yellow Shirt</h3>
+              <p class="item-price">₹ 1,100.00</p>
+              <div class="item-size-box">
+                <span class="size-box">S</span>
+                <span class="size-box">M</span>
+                <span class="size-box">L</span>
+                <span class="size-box">XL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="more-collection">
+          <a href="#" class="more-link">More Cloting Collection &rarr;</a>
+        </div>
+      </section>
+
+      <!-- ** Footer -->
+
+      <footer class="footer">
+        <div class="footer-container grid-footer">
+          <!-- Address Column -->
+          <div class="address-col">
+            <p class="footer-heading">Contact us</p>
+            <address class="contacts">
+              <p class="address">
+                623 Brookside St., 2nd Floor, San Francisco, CA 94107
+              </p>
+              <p>
+                <a class="footer-link" href="tel:415-201-6370">415-201-6370</a>
+                <br />
+                <a class="footer-link" href="mailto:hello@omnifood.com"
+                  >hello@mens.com</a
+                >
+              </p>
+            </address>
+          </div>
+
+          <!-- Nav-1 Column -->
+          <nav class="nav-col">
+            <p class="footer-heading">Account</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Create account</a></li>
+              <li><a class="footer-link" href="#">Sign in</a></li>
+              <li><a class="footer-link" href="#">iOS app</a></li>
+              <li><a class="footer-link" href="#">Android app</a></li>
+            </ul>
+          </nav>
+
+          <!-- Nav-2 Column -->
+          <nav class="nav-col">
+            <p class="footer-heading">Company</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">About men's</a></li>
+              <li><a class="footer-link" href="#">For Business</a></li>
+              <li><a class="footer-link" href="#">Cloting partners</a></li>
+              <li><a class="footer-link" href="#">Careers</a></li>
+            </ul>
+          </nav>
+
+          <!-- Nav-3 Column -->
+          <nav class="nav-col">
+            <p class="footer-heading">Resources</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Products </a></li>
+              <li><a class="footer-link" href="#">Help center</a></li>
+              <li><a class="footer-link" href="#">Privacy & Terms</a></li>
+            </ul>
+          </nav>
+
+          <!-- Nav-4 Column -->
+          <nav class="policies-col">
+            <p class="footer-heading">Policies</p>
+            <ul class="footer-nav">
+              <li>
+                <a class="footer-link" href="#">Exchange/Return Your Ovrder</a>
+              </li>
+              <li><a class="footer-link" href="#">Shipping Policy</a></li>
+              <li>
+                <a class="footer-link" href="#">Exchange and Refund Policy</a>
+              </li>
+              <li><a class="footer-link" href="#">Terms and Conditions</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </main>
+  </body>
+
+  <!-- JavaScript -->
+  <script>
+    const btnNavEl = document.querySelector(".btn-mobile-nav");
+    const headerEl = document.querySelector(".header");
+
+    btnNavEl.addEventListener("click", function () {
+      headerEl.classList.toggle("nav-open");
+    });
+  </script>
+</html>
