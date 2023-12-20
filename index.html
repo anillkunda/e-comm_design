@@ -331,15 +331,15 @@
         </div>
       </footer>
     </main>
+
+    <!-- JavaScript -->
+    <script>
+      const btnNavEl = document.querySelector(".btn-mobile-nav");
+      const headerEl = document.querySelector(".header");
+
+      btnNavEl.addEventListener("click", function () {
+        headerEl.classList.toggle("nav-open");
+      });
+    </script>
   </body>
-
-  <!-- JavaScript -->
-  <script>
-    const btnNavEl = document.querySelector(".btn-mobile-nav");
-    const headerEl = document.querySelector(".header");
-
-    btnNavEl.addEventListener("click", function () {
-      headerEl.classList.toggle("nav-open");
-    });
-  </script>
 </html>
